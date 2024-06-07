@@ -165,13 +165,13 @@ $ gist REPORT.md
 с помощью которого можно будет собирать статическую библиотеку *formatter*.
 
 ```sh
-andrew@Ubuntu24Laby:~$ cd AndrewB203/workspacenew/lab03
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03$ cd formatter_lib/
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_lib$ cmake -H. -B build
+force@Ubuntu24Laby:~$ cd forceB203/workspacenew/lab03
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03$ cd formatter_lib/
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/formatter_lib$ cmake -H. -B build
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/formatter_lib/build
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_lib$ cmake --build build
+-- Build files have been written to: /home/force/forceB203/workspacenew/lab03/formatter_lib/build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/formatter_lib$ cmake --build build
 Consolidate compiler generated dependencies of target formatter
 [100%] Built target formatter
 ```
@@ -182,12 +182,12 @@ Consolidate compiler generated dependencies of target formatter
 руководитель поручает заняться созданием `CMakeList.txt` для библиотеки 
 *formatter_ex*, которая в свою очередь использует библиотеку *formatter*.
 ```sh
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03$ cd formatter_ex_lib/
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_ex_lib$ cmake -H. -B build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03$ cd formatter_ex_lib/
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/formatter_ex_lib$ cmake -H. -B build
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/formatter_ex_lib/build
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/formatter_ex_lib$ cmake --build build
+-- Build files have been written to: /home/force/forceB203/workspacenew/lab03/formatter_ex_lib/build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/formatter_ex_lib$ cmake --build build
 Consolidate compiler generated dependencies of target formatter
 [ 50%] Built target formatter
 Consolidate compiler generated dependencies of target formatter_ex
@@ -201,11 +201,11 @@ Consolidate compiler generated dependencies of target formatter_ex
 * *solver*, приложение которое испольует статические библиотеки *formatter_ex* и *solver_lib*.
 
 ```sh
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_application$ cmake -H. -B build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/solver_application$ cmake -H. -B build
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/solver_application/build
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_application$ cmake --build build
+-- Build files have been written to: /home/force/forceB203/workspacenew/lab03/solver_application/build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/solver_application$ cmake --build build
 Consolidate compiler generated dependencies of target formatter
 [ 25%] Built target formatter
 Consolidate compiler generated dependencies of target formatter_ex
@@ -217,12 +217,12 @@ Consolidate compiler generated dependencies of target equation
 
 ```
 ```sh
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03$ cd solver_lib
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_lib$ cmake -H. -B build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03$ cd solver_lib
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/solver_lib$ cmake -H. -B build
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/andrew/AndrewB203/workspacenew/lab03/solver_lib/build
-andrew@Ubuntu24Laby:~/AndrewB203/workspacenew/lab03/solver_lib$ cmake --build build
+-- Build files have been written to: /home/force/forceB203/workspacenew/lab03/solver_lib/build
+force@Ubuntu24Laby:~/forceB203/workspacenew/lab03/solver_lib$ cmake --build build
 Consolidate compiler generated dependencies of target solver
 [ 50%] Building CXX object CMakeFiles/solver.dir/solver.cpp.o
 [100%] Linking CXX static library libsolver.a
